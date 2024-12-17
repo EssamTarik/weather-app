@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+
+.cityInput {
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  width: 330px;
+  border-radius: 28px;
+  max-width: 100%;
+  padding: 11px 60px 11px 18px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cityInput::placeholder {
+  color: grey;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .cityInput {
+    width: 100%;
+  }
+}

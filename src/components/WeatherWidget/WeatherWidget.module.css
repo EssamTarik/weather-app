@@ -1,0 +1,40 @@
+.widget {
+  --widget-background-color: #0A1936;
+  min-height: 566px;
+  background-color: var(--widget-background-color);
+  color: white;
+  padding: 48px 56px;
+  max-width: 750px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.todaySection {
+  display: flex;
+  gap: 56px;
+}
+
+.forecastSection {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 28px 0 0 0;
+  border-top: var(--border-style);
+}
+
+.upcomingDayForecast {
+  flex: 1;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .forecastSection {
+    border-top: none;
+    flex-direction: column;
+  }
+}

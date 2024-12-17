@@ -1,0 +1,40 @@
+.citySearchForm {
+  display: flex;
+  gap: 16px;
+}
+
+.searchButton {
+  position: relative;
+  background: #1090DB;
+  padding: 11px 67px;
+  border-radius: 39px;
+  color: white;
+}
+
+.spinner {
+  --spinner-size: 12px;
+
+  position: absolute;
+  display: inline-block;
+  margin-left: 5px;
+  top: calc(50% - calc(var(--spinner-size) / 2));
+  width: var(--spinner-size);
+  height: var(--spinner-size);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .citySearchForm {
+    flex-direction: column;
+  }
+}
