@@ -43,6 +43,7 @@
   .weatherImg {
     position: absolute;
     height: 54px;
+    max-width: 25%;
     margin: 0 
   }
 }
