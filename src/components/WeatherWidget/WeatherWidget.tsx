@@ -24,7 +24,7 @@ const WeatherWidget = () => {
       <div className={styles.forecastSection}>
         {days?.map((day, i) => {
           
-          return <ForecastWeatherCard date={new Date(day)} temperature={temperatures[i]} weatherCode={weatherCodes[i]} />
+          return <ForecastWeatherCard key={day} date={new Date(day)} temperature={temperatures[i]} weatherCode={weatherCodes[i]} />
         })}
       </div>
       </>
