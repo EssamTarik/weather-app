@@ -32,14 +32,11 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A1936;
   min-width: 320px;
   min-height: 100vh;
-}
-
-@media (min-width: 769px) {
-  body {
-    place-items: center;
-  }
 }
 
 h1 {

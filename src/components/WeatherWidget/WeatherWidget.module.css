@@ -1,7 +1,5 @@
 .widget {
-  --widget-background-color: #0A1936;
   min-height: 566px;
-  background-color: var(--widget-background-color);
   color: white;
   padding: 48px 56px;
   max-width: 750px;
